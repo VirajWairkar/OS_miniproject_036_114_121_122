@@ -1,0 +1,9 @@
+build/os_pipeline
+logs/*
+outputs/*
+backups/*
+exp2_workspace/
+__pycache__/
+!logs/.gitkeep
+!outputs/.gitkeep
+!backups/.gitkeep

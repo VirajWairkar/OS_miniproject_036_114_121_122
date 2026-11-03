@@ -1,0 +1,7 @@
+plot_id,soil_moisture_pct,temperature_c,rainfall_forecast_mm,growth_stage
+PLOT-101,22,35,0,Grand Growth
+PLOT-102,71,28,24,Tillering
+PLOT-103,42,31,2,Germination
+PLOT-104,36,33,13,Grand Growth
+PLOT-105,80,29,0,Maturity
+PLOT-106,18,38,1,Tillering

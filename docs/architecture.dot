@@ -1,0 +1,18 @@
+digraph Irrigation {
+  graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.28", ranksep="0.52", fontname="DejaVu Sans"];
+  node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=11, color="#CBD5E1", penwidth=1.2, fillcolor="#F5F8FB", margin="0.18,0.11"];
+  edge [color="#527D79", arrowsize=0.7, penwidth=1.3, fontsize=9, fontname="DejaVu Sans"];
+  data [label="Synthetic CSV\nSensor + weather", fillcolor="#E9F6EE"];
+  sh [label="Bash shell script\nExp 5: checks, logs, backup", fillcolor="#E5F2FF"];
+  parent [label="C++ Parent process\nExp 4: fork / waitpid", fillcolor="#F7F0E5"];
+  valid [label="Child 1\nvalidate CSV"];
+  knn [label="Child 2\nKNN prediction"];
+  rep [label="Child 3\nwrite report"];
+  out [label="Outputs\nCSV, TXT, JSON", fillcolor="#E9F6EE"];
+  exp1 [label="Exp 1: Linux\nsystem health", fillcolor="#F3F0FF"];
+  exp2 [label="Exp 2: Files\nfolders + permissions", fillcolor="#F3F0FF"];
+  data -> sh -> parent -> valid -> knn -> rep -> out;
+  exp1 -> sh [style=dashed, label="environment"];
+  exp2 -> sh [style=dashed, label="storage"];
+  parent -> out [style=dotted, label="open/read/write/close", constraint=false];
+}
