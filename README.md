@@ -1,6 +1,4 @@
 # Smart Irrigation — Operating Systems Mini-Project
-
-**Student:** Viraj Wairkar | **Roll:** 16010424122 | **Batch:** B2
 **AI use case:** KJS-AGR-01 — Sugarcane Irrigation Advisory
 **OS experiments:** 1, 2, 4, 5 (as numbered in the OS mini-project assignment)
 
@@ -84,5 +82,3 @@ The parent waits for each stage, making the workflow deterministic and preventin
 - `Permission denied`: use `bash scripts/run.sh` or `chmod +x scripts/run.sh`.
 - CSV invalid: verify headers, number ranges, and exact permitted growth-stage spellings.
 
-## Acknowledgement and limitations
-This educational prototype was prepared with AI assistance for initial code, documentation, and test ideas. Student must review, execute, understand and be able to explain it. Not validated with sensor hardware, farmers, agronomic experts, or real-world weather. No irrigation action or pump control is performed. Real deployment needs calibrated sensors, crop-specific agronomy validation, ethical data governance, human oversight, and security.
